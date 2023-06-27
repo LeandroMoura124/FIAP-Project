@@ -289,7 +289,7 @@
 
 
             <!-- campo de textarea -->
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Campo TextArea</legend>
                 <label for="mensagem">Digite sua mensagem</label><br>
                 <textarea name="mensagem" id="mensagem"></textarea>
@@ -305,10 +305,22 @@
             
             <fieldset>
                 <legend>Botôes button</legend>
-                <!-- Obs: o padrao do tipo do button caso nao definimos, será submit, ou seja, ele estará pronto para enviar algo a um servidor -->
+                Obs: o padrao do tipo do button caso nao definimos, será submit, ou seja, ele estará pronto para enviar algo a um servidor
                 <button type="submit">Criar Conta</button>
                 <button type="reset">Limpar Dados</button>
                 <button type="button">Chamar Javascript</button>
+            </fieldset> -->
+        
+            
+            <!-- atributos importante nos campos -->
+
+            <fieldset>
+                <label for="usuario">Digite um usuário</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Ex: user457894" minlength="5" maxlength="15"
+                required autofocus>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Enviar</button>
             </fieldset>
         </form>
 
