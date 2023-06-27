@@ -92,8 +92,6 @@ div a:hover{
     color: #ec3874;
 }*/
 
-
-
 /*
 .bg-blue{background-color: rgba(66, 66, 194, 0.774);}
 .bg-red{background-color: rgba(212, 20, 20, 0.774);}
@@ -119,7 +117,6 @@ div a:hover{
     margin: var(--margin);
 }*/
 
-
 /*
 .box{
     width: 80%;
@@ -133,17 +130,7 @@ img{
 
 */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-:root{
-    --color-right: #ccc;
-}
+/*  banner inicial
 .hero{
     width: 100%;
     min-height: 100vh;
@@ -179,12 +166,9 @@ img{
     transition: 1s;
     background-color: rgb(1, 104, 35);
     color: rgb(255, 255, 255);
-}
+}*/
 
-
-
-
-/* grid */
+/* grid  em coluns
 
 .grid-list{
     width: 100%;
@@ -236,6 +220,7 @@ img{
     color: #eef1ee;
  
 }
+/* responsividade
 @media(max-width:650px) {
    
     .hero-content{
@@ -266,4 +251,239 @@ img{
         width: 70%;
         margin: 1rem;
     }
+}
+*/
+
+/* Entendendo os alinhamentos */
+.container-exemplo-alinhamentos{
+    /* ALINHAMENTO HORIZONTAL - EIXO X */
+    justify-content: start ;
+    justify-content: end ;
+    justify-content: space-around ;
+    justify-content: space-between ;
+    justify-content: space-evenly ;
+    justify-content: center ;
+
+    /* ALINHAMENTO VERTICAL - EIXO Y */
+    align-content: start;
+    align-content: end;
+    align-content: center;
+
+    /* ALINHAMENTO DO CONTEUDO - horizontal  */
+
+    justify-items: start;
+    justify-items: end;
+    justify-items: stretch;
+    justify-items: center;
+
+    /* ALINHAMENTO DO VERTICAL - horizontal  */
+    align-items: start;
+    align-items: center;
+    align-items: end;
+    align-items: stretch;
+
+
+}
+
+
+    /* Projeto banner escopo
+/* .container{
+    padding: 1rem;
+    color: #fff;
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+
+.header{
+    background-color: #333;
+    
+    grid-column: 1/3;
+}
+
+.main{
+    background-color: rgb(190, 190, 190);
+    grid-column: 1/2;
+
+}
+
+.aside{
+    background-color: #999;
+  
+    grid-column: 2/3;
+
+}
+.footer{
+    background-color: rgb(114, 111, 111);
+    grid-column: 1/3;
+
+} */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/* Projeto 2 - Cards */
+/* .header{
+    background-color: #f1f1f1;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+}
+.logo{
+    grid-area: logo;
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #a8e070;
+}
+
+
+.hero{
+    background-color: #3a3838;
+    color: #f1f1f1;
+    padding: 5rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "title" "subtitle";
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    grid-area: title;
+}
+.hero p{
+    font-size: 1rem;
+    grid-area: subtitle;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2rem;
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+.card{
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 2rem;
+    text-align: center;
+}
+.card h2{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.card p{
+    font-size: 1.8rem;
+    color: #666;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+
+.footer{
+    text-align: center;
+    background-color: #3a3838bd;
+    color: #a8e070;
+    padding: 1rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copyright";
+}
+
+.footer-content{
+    grid-area: copyright;
+}
+
+
+@media(max-width:650px){
+    .cards {
+        display:contents;
+
+    }
+    .card{
+        background-color: rgb(29, 124, 42);
+        margin: 5px;
+        justify-items:space-around;
+    }
+    .cards img{
+        width: 80%;
+    }
+} */
+
+
+/* Projeto 3 - Formulários */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+h1{
+    margin: 20px;
+}
+
+fieldset{
+    margin: 20px;
+    padding: 10px;
+} */
+
+
+
+/* textarea */
+textarea{
+    width: 80%;
+    height: 200px ;
+    resize: none;
+    padding: 20px;
 }
